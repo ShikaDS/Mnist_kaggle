@@ -54,6 +54,7 @@ def fit_model(
         batch_size=batch_size,
         callbacks=[model_checkpoint_callback, reduce_lr, early_stop],
     )
+    
 def predict_and_create_submission(checkpoint_path: str) -> None:
     """
     Function to predict the trained model 
